@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{995F3DFC-934F-4A96-ACCD-2C9DB5CF6622}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PropertyMarketPlace/Properties.cs">
+    <Files>
+      <File FileName="PropertyMarketPlace/Program.cs" Line="1" Column="1" />
+      <File FileName="PropertyMarketPlace/Bid.cs" Line="1" Column="1" />
+      <File FileName="PropertyMarketPlace/Properties.cs" Line="8" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PropertyMarketPlace" expanded="True">
+            <Node name="PropertyMarketPlace" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Properties.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PropertyMarketPlace PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

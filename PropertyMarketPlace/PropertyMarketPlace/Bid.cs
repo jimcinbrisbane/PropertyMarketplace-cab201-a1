@@ -1,9 +1,9 @@
 ﻿using System;
 namespace PropertyMarketPlace
 {
-    public class EmptyClass
+    public class Bid
     {
-        public EmptyClass()
+        public Bid()
         {
         }
     }

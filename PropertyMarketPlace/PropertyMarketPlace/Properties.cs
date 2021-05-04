@@ -1,10 +1,9 @@
 ﻿using System;
 namespace PropertyMarketPlace
 {
-    public class EmptyClass
+    abstract class Properties
     {
-        public EmptyClass()
-        {
-        }
+        public abstract void listAllMeProperties();
+        public abstract void searchViaPostcode();
     }
 }
