@@ -1,0 +1,12 @@
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.csprojAssemblyReference.cache
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.AssemblyInfoInputs.cache
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.AssemblyInfo.cs
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.csproj.CoreCompileInputs.cache
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/bin/Debug/netcoreapp3.1/PropertyMarketPlace.deps.json
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/bin/Debug/netcoreapp3.1/PropertyMarketPlace.runtimeconfig.json
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/bin/Debug/netcoreapp3.1/PropertyMarketPlace.runtimeconfig.dev.json
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/bin/Debug/netcoreapp3.1/PropertyMarketPlace.dll
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/bin/Debug/netcoreapp3.1/PropertyMarketPlace.pdb
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.dll
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.pdb
+/Users/user/Documents/PropertyMarketplace-cab201-a1/PropertyMarketPlace/PropertyMarketPlace/obj/Debug/netcoreapp3.1/PropertyMarketPlace.genruntimeconfig.cache

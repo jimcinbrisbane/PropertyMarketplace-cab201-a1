@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace PropertyMarketPlace
 {
     public class Customer
@@ -7,7 +9,9 @@ namespace PropertyMarketPlace
         protected string contact_details;
         protected string password;
 
-        protected bool isAuth;
+        public bool isAuth;
+
+        protected List<Properties> properties;
 
         // register account
         public Customer(string username, string contact_details, string password) 
@@ -19,8 +23,8 @@ namespace PropertyMarketPlace
         }
 
         // login
-        public string Auth(string username, string password){
-            if (this.username == username && this.password == password){
+        public string Auth(string password){
+            if (this.password == password){
                  this.isAuth = true;
                  return $"Welcome, {this.username}";
             }else{
@@ -28,7 +32,7 @@ namespace PropertyMarketPlace
             }
         }
 
-        public string[] getContactDetails(string username){
+        public string[] getContactDetails(){
             if (this.isAuth == true){
                 string[] info = {username,contact_details};
                 return info;
@@ -38,25 +42,13 @@ namespace PropertyMarketPlace
             }
         }
 
-        public string Logout (string username){
+        public string Logout (){
             if (this.isAuth == true){
                 this.isAuth = false;
-                return $"{username} had logged out";
+                return $"{this.username} had logged out";
             }else{
                 return $"user not logged in";
             }
-        }
-
-
-
-        public virtual void Display()
-        {
-            Console.WriteLine(this.id + " " + this.name + " " + this.salary);
-        }
-
-        public override string ToString()
-        {
-            return this.id + " " + this.name + " " + this.salary;
         }
 
     }
