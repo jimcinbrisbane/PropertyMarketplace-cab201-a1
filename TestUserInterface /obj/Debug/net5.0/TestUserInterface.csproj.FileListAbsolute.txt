@@ -1,0 +1,15 @@
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /bin/Debug/net5.0/TestUserInterface.deps.json
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /bin/Debug/net5.0/TestUserInterface.runtimeconfig.json
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /bin/Debug/net5.0/TestUserInterface.runtimeconfig.dev.json
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /bin/Debug/net5.0/TestUserInterface.dll
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /bin/Debug/net5.0/ref/TestUserInterface.dll
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /bin/Debug/net5.0/TestUserInterface.pdb
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.csprojAssemblyReference.cache
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.AssemblyInfoInputs.cache
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.AssemblyInfo.cs
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.csproj.CoreCompileInputs.cache
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.dll
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/ref/TestUserInterface.dll
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.pdb
+/Users/user/Documents/PropertyMarketplace-cab201-a1/TestUserInterface /obj/Debug/net5.0/TestUserInterface.genruntimeconfig.cache
