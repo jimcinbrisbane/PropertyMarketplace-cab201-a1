@@ -5,13 +5,16 @@ namespace TestUserInterface
 {
     public class Customer
     {
-        public string username;
+        public string username{ get; set;}
         protected string contact_details;
         protected string password;
 
 
-        protected List<Properties> properties = new List<Properties>();
+        public List<Properties> properties = new List<Properties>();
         // register account
+
+
+        //Constructor
         public Customer(string username, string contact_details, string password) 
         {
             this.username = username;
@@ -43,12 +46,6 @@ namespace TestUserInterface
            
         }
 
-        public void ListAllMyProperty(){
-            foreach (Properties prop in properties)
-            {
-                Console.WriteLine($"{prop.listAll()}");
-            }
-        }
 
       
 
