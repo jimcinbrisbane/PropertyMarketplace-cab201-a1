@@ -9,16 +9,18 @@ namespace TestUserInterface
         protected string contact_details;
         protected string password;
 
-        public bool isAuth;
 
-        protected List<Properties> properties;
-
+        protected List<Properties> properties = new List<Properties>();
         // register account
         public Customer(string username, string contact_details, string password) 
         {
             this.username = username;
             this.contact_details = contact_details;
             this.password = password;
+        }
+
+        public void AddProp(Properties property){
+            this.properties.Add(property);
         }
 
         // login
@@ -31,21 +33,20 @@ namespace TestUserInterface
         }
 
         public string[] getContactDetails(){
-            if (this.isAuth == true){
                 string[] info = {username,contact_details};
                 return info;
-            }else{
-                string[] err = {username,"not authed"};
-                return err;
-            }
+         
         }
 
         public string name(){
-            if (this.isAuth == true){
                 return username;
-            }else{
-                string err = "err";
-                return err;
+           
+        }
+
+        public void ListAllMyProperty(){
+            foreach (Properties prop in properties)
+            {
+                Console.WriteLine($"{prop.listAll()}");
             }
         }
 

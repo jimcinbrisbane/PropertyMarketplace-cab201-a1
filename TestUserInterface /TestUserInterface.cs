@@ -63,10 +63,9 @@ namespace TestUserInterface
         }
 
         public void Logout(){
+            customer[customer.FindIndex(ind=>ind.name() == current[0].name())] = current[0];
             current.Clear();
             UserInterface.Message($"user logged out");
-
-
         }
 
         public void PropMenu()
@@ -74,7 +73,7 @@ namespace TestUserInterface
             Menu submenu = new Menu();
             submenu.Add("Register a new land for sale", AddLand);
             submenu.Add("Register a new house for sale", AddHouse);
-            submenu.Add("!List my properties", AddLand);
+            submenu.Add("List my properties", ListAllMyProperty);
             submenu.Add("!List bids received for a property", AddLand);
             submenu.Add("!Sell one of my properties to the highest bidder", AddLand);
             submenu.Add("!Search for a property for sale", AddLand);
@@ -86,17 +85,16 @@ namespace TestUserInterface
 
         public void AddLand()
         {
-            string address  = UserInterface.GetInput("Enter your name");
-            if (!string.IsNullOrEmpty(address) && Int32.TryParse(UserInterface.GetInput("Enter your postcode"), out int postcode) && Int32.TryParse(UserInterface.GetInput("Enter your postcode"), out int size) ){
+            string address  = UserInterface.GetInput("Enter your address");
+            if (!string.IsNullOrEmpty(address) && Int32.TryParse(UserInterface.GetInput("Enter your postcode"), out int postcode) && Int32.TryParse(UserInterface.GetInput("Enter the size"), out int size) ){
                 Land place = new Land(current[0].name(), address, postcode, size);
                 land.Add(place);
                 prop.Add(place);
-                UserInterface.Message($"Added a new land");
+                current[0].AddProp(place);
+                UserInterface.Message($"{place.listAll()}");
             }else{
                 UserInterface.Message($"Please enter correct information.");
             }
-            land.Add(new Land(current[0].name(), "256 main street", 4000, 300));
-            UserInterface.Message($"Adding an land");
         }
         public void AddHouse()
         {
@@ -106,10 +104,14 @@ namespace TestUserInterface
                 House place = new House(current[0].name(), address, postcode, desc);
                 house.Add(place);
                 prop.Add(place);
-                UserInterface.Message($"Added a new House");
+                current[0].AddProp(place);
+                UserInterface.Message($"{place.listAll()}");
             }else{
                 UserInterface.Message($"Please enter correct information.");
             }
+        }
+        public void ListAllMyProperty(){
+            current[0].ListAllMyProperty();
         }
         // public void RemoveApple()
         // {
@@ -127,7 +129,7 @@ namespace TestUserInterface
 
         public void Run()
         {
-            menu.Add("Enter name/password", AddUser);
+            menu.Add("Register", AddUser);
             menu.Add("Login", LoginUser);
             DisplayMainMenu();
         }

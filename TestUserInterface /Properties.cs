@@ -3,15 +3,14 @@ namespace TestUserInterface
 {
     public abstract class Properties
     {
-        protected int id;
         protected string address;
         protected int postcode;
         public string username_FK{ get; set; }
 
-        public virtual string listAll(string username)
+        public virtual string listAll()
     {
         
-            return $"{id},{address},{postcode},{username_FK}";
+            return $"{this.address},{this.postcode},{this.username_FK}";
        
     }
 
@@ -22,15 +21,18 @@ namespace TestUserInterface
     {
         protected int size;
 
-    public override string listAll(string username)
+    public override string listAll()
     {
         
-            return $"{id},{address},{postcode},{username_FK},{size}";
+            return $"{this.address},{this.postcode},{this.username_FK},{this.size}";
       
     }
     public Land(string username_FK, string address, int postcode, int size)
     {
-        Console.WriteLine( "Created");
+        this.username_FK = username_FK;
+        this.address = address;
+        this.postcode = postcode;
+        this.size = size;
     }
     }
     public class House : Properties
@@ -38,12 +40,15 @@ namespace TestUserInterface
         protected string desc;
     public House(string username_FK, string address, int postcode, string desc )
     {
-        Console.WriteLine("Created");
+        this.username_FK = username_FK;
+        this.address = address;
+        this.postcode = postcode;
+        this.desc = desc;
     }
-    public override string listAll(string username)
+    public override string listAll()
         {
            
-                return $"{id},{address},{postcode},{username_FK},{desc}";
+            return $"{this.address},{this.postcode},{this.username_FK},{this.desc}";
            
         }
     }
