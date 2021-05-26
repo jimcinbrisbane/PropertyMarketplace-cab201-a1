@@ -3,8 +3,8 @@ namespace TestUserInterface
 {
     public abstract class Properties
     {
-        protected string address;
-        protected int postcode;
+        public string address;
+        public int postcode;
         public string username_FK{ get; set; }
 
         public virtual string listAll()
