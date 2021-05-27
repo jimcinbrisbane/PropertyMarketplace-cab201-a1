@@ -28,12 +28,10 @@ namespace TestUserInterface
     private double showTaxPayable() 
         {
             return propID.tax(amount);
-            
-
     }
 
     public string view_bid(){
-        return $"user {this.username} had bid for {this.amount}, which means it will pay ${showTaxPayable()} tax, please contact ${this.contact_details}";
+        return $"user {this.username} had bid for ${this.amount}, which means they will pay ${showTaxPayable()} in tax, please contact them at {this.contact_details}";
     }
 
     public Properties showProp(){

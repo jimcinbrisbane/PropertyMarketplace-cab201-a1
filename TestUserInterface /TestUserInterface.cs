@@ -43,7 +43,6 @@ namespace TestUserInterface
             }else{
                 UserInterface.Message($"username, contacts or password cannot be empty");
             }
-
         }
 // login user
         public void LoginUser()
@@ -64,7 +63,6 @@ namespace TestUserInterface
             }else{
                 UserInterface.Message($"username, password cannot be empty");
             }
-
         }
         public void Logout(){
             //  update all changes from current to customer list
@@ -122,8 +120,6 @@ namespace TestUserInterface
                 UserInterface.Message($"Please enter correct information.");
             }
         }
-
-
 // search by postcode, list all properties that matched the postcode
         public void SearchPostCode(){
             if (Int32.TryParse(UserInterface.GetInput("Enter your postcode"), out int pCode)){
@@ -134,6 +130,7 @@ namespace TestUserInterface
                             search.Add($" {p.listAll()}", PropMenu);
 
                         }
+                    search.Add($"Go back", PropMenu);
                     search.Display();
 
             }else{
@@ -232,14 +229,12 @@ namespace TestUserInterface
                     search.Display();
 
         }
-
         public void Run()
         {
             menu.Add("Register", AddUser);
             menu.Add("Login", LoginUser);
             DisplayMainMenu();
         }
-
         public void DisplayMainMenu()
         {
             while (true){

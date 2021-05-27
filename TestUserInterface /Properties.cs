@@ -76,7 +76,7 @@ namespace TestUserInterface
     public override string listAll()
         {
            
-            return $"The House {this.address},{this.postcode}, belongs to {this.username_FK}: \n {this.desc}";
+            return $"The House {this.address},{this.postcode}, belongs to {this.username_FK}: \n \t {this.desc}";
            
         }
     }
