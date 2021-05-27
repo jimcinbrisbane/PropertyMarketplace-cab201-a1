@@ -22,10 +22,11 @@ namespace TestUserInterface
             this.contact_details = contact_details;
             this.password = password;
         }
+        
 
 
 
-
+// add prop
         public void AddProp(Properties property){
             this.properties.Add(property);
         }
@@ -39,14 +40,13 @@ namespace TestUserInterface
             }
         }
 
-        public string[] getContactDetails(){
-                string[] info = {username,contact_details};
-                return info;
+        public string getContactDetails(){
+                return this.contact_details;
          
         }
 
         public string name(){
-                return username;
+                return this.username;
            
         }
 

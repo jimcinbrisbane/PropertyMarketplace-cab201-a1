@@ -39,8 +39,6 @@ namespace TestUserInterface
             //check if all filed are valid
             if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password) && !string.IsNullOrEmpty(contact_details)){
             customer.Add(new Customer(username,contact_details,password));
-
-
             UserInterface.Message($"User {username} registered");
             }else{
                 UserInterface.Message($"username, contacts or password cannot be empty");
@@ -68,8 +66,6 @@ namespace TestUserInterface
             }
 
         }
-
-
         public void Logout(){
             //  update all changes from current to customer list
             customer[customer.FindIndex(ind=>ind.name() == current[0].name())] = current[0];
@@ -194,7 +190,7 @@ namespace TestUserInterface
         private void PlaceBid(Properties bidprop)
         {   if (Int32.TryParse(UserInterface.GetInput($"How much can you bid {bidprop.addi()} ?"), out int amount)){
             //make a bid for the property selected in SearchBidtoPlace
-                Bid make = new Bid(current[0].name(), amount, bidprop);
+                Bid make = new Bid(current[0].name(), amount, bidprop, current[0].getContactDetails());
                 bids.Add(make);
                 UserInterface.Message($"{current[0].name()}, you had bid {bidprop.addi()} for ${amount}");
             }else{

@@ -7,11 +7,14 @@ namespace TestUserInterface
         protected Properties propID;
         protected string username;
         protected int amount;
-        public Bid(string username, int amount, Properties propID) 
+
+        protected string contact_details;
+        public Bid(string username, int amount, Properties propID, string contact_details) 
         {
             this.username = username;
             this.amount = amount > 0 ? amount : 0;
             this.propID = propID;
+            this.contact_details = contact_details;
         }
         public string listAll(){
             return this.propID.listAll();
@@ -24,13 +27,13 @@ namespace TestUserInterface
 
     private double showTaxPayable() 
         {
-            return this.amount * 0.05;
+            return propID.tax(amount);
             
 
     }
 
     public string view_bid(){
-        return $"user {this.username} had bid for {this.amount}, which means it will pay ${showTaxPayable()} tax";
+        return $"user {this.username} had bid for {this.amount}, which means it will pay ${showTaxPayable()} tax, please contact ${this.contact_details}";
     }
 
     public Properties showProp(){
