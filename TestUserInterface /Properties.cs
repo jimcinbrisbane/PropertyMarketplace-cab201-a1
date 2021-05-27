@@ -3,18 +3,32 @@ namespace TestUserInterface
 {
     public abstract class Properties
     {
-        public string address;
-        public int postcode;
-        public string username_FK{ get; set; }
+        protected string address;
+        protected int postcode;
+        protected string username_FK;
+        protected string sold_to;
+
+        public virtual int post(){
+            return this.postcode;
+        }
+        public virtual string addi(){
+            return this.address;
+        }
+        public virtual string sold(string sold_user){
+            sold_to = sold_user;
+            return $"sold to {sold_user}";
+        }
 
         public virtual string listAll()
     {
-        
             return $"{this.address},{this.postcode},{this.username_FK}";
-       
     }
 
+
+
     }
+
+
 
 
     public class Land : Properties
@@ -27,6 +41,8 @@ namespace TestUserInterface
             return $"{this.address},{this.postcode},{this.username_FK},{this.size}";
       
     }
+
+     
     public Land(string username_FK, string address, int postcode, int size)
     {
         this.username_FK = username_FK;

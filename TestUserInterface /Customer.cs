@@ -5,12 +5,13 @@ namespace TestUserInterface
 {
     public class Customer
     {
-        public string username{ get; set;}
+        protected string username;
         protected string contact_details;
         protected string password;
-
-
         public List<Properties> properties = new List<Properties>();
+        // it's public so we don't need a find function 
+        //everytime we tryna get user's listed properties, would not do this if we have an sql
+
         // register account
 
 
@@ -21,6 +22,9 @@ namespace TestUserInterface
             this.contact_details = contact_details;
             this.password = password;
         }
+
+
+
 
         public void AddProp(Properties property){
             this.properties.Add(property);

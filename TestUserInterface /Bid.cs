@@ -22,11 +22,19 @@ namespace TestUserInterface
             return this.amount;
         }
 
-    public double showTaxPayable() 
+    private double showTaxPayable() 
         {
             return this.amount * 0.05;
             
 
+    }
+
+    public string view_bid(){
+        return $"user {this.username} had bid for {this.amount}, which means it will pay ${showTaxPayable()} tax";
+    }
+
+    public Properties showProp(){
+        return this.propID;
     }
 }
 }
