@@ -27,7 +27,6 @@ namespace TestUserInterface
             current = new List<Customer>();
             bids = new List<Bid>();
         }
-
 // register user to customer list
         public void AddUser()
         {
@@ -71,7 +70,6 @@ namespace TestUserInterface
             // clean filed
             current.Clear();
         }
-
         //submenu
         public void PropMenu()
         {
@@ -137,7 +135,6 @@ namespace TestUserInterface
                 UserInterface.Message($"Please enter correct postcode.");
             }
         }
-
         public void SellProp(){
              Menu search = new Menu();
                     foreach (Properties prop in current[0].properties)
@@ -148,7 +145,6 @@ namespace TestUserInterface
 
                     search.Display();
         }
-
         private void Sell(Properties property){
             // this function search for all bids for the properties selected from SellProp()
             try{
@@ -166,7 +162,6 @@ namespace TestUserInterface
                 }
 
         }
-
         public void SearchBidtoPlace(){
             if (Int32.TryParse(UserInterface.GetInput("Enter your postcode"), out int pCode)){
                 //search property by postcode and then let the user place a bid using lambda action PlaceBid
